@@ -10,10 +10,12 @@
 
     typedef size_t YSizeType;
 
-    typedef __int8 YChar;
     typedef __int16 YShort;
     typedef __int32 YInt;
     typedef __int64 YIntBig;
+
+    typedef __int8 YChar;
+    typedef wchar_t YWChar;
 #else
     typedef unsigned char YUChar;
     typedef unsigned short YUShort;

@@ -15,7 +15,13 @@
     <Filter Include="Source Files\Core">
       <UniqueIdentifier>{f2b7313e-0272-4584-b868-85cf41f2b34c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Core\Windows">
+    <Filter Include="Source Files\Core\Main">
+      <UniqueIdentifier>{ad8ea1b4-64c9-44d9-a5b3-6de49a9b68f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Main\Windows">
+      <UniqueIdentifier>{3f3c276e-29c4-47aa-91b5-a0a4ec31fe24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Window">
       <UniqueIdentifier>{4c75c475-998a-4d87-ade5-e8df7248c258}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -23,11 +29,14 @@
     <ClCompile Include="Source\Precompiled.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Core\Windows\WindowsMain.cpp">
-      <Filter>Source Files\Core\Windows</Filter>
+    <ClCompile Include="Source\Core\Main\Windows\WindowsMain.cpp">
+      <Filter>Source Files\Core\Main</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Core\Main.cpp">
-      <Filter>Source Files\Core</Filter>
+    <ClCompile Include="Source\Core\Main\Main.cpp">
+      <Filter>Source Files\Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Window\Windows\WindowsWindow.cpp">
+      <Filter>Source Files\Core\Window</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +46,17 @@
     <ClInclude Include="Source\Platform\Platform.h">
       <Filter>Source Files\Platform</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Platform\IntTypes.h" />
+    <ClInclude Include="Source\Platform\PlatformWindows.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Window\Windows\WindowsWindow.h">
+      <Filter>Source Files\Core\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\TypeDefs.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\Assertions.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

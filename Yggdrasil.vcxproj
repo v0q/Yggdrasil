@@ -86,14 +86,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Core\Main.cpp" />
-    <ClCompile Include="Source\Precompiled.cpp" />
-    <ClCompile Include="Source\Core\Windows\WindowsMain.cpp" />
+    <ClCompile Include="Source\Core\Main\Main.cpp" />
+    <ClCompile Include="Source\Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Main\Windows\WindowsMain.cpp" />
+    <ClCompile Include="Source\Core\Window\Windows\WindowsWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Platform\IntTypes.h" />
+    <ClInclude Include="Source\Platform\Assertions.h" />
+    <ClInclude Include="Source\Platform\PlatformWindows.h" />
+    <ClInclude Include="Source\Platform\TypeDefs.h" />
     <ClInclude Include="Source\Platform\Platform.h" />
     <ClInclude Include="Source\Precompiled.h" />
+    <ClInclude Include="Source\Core\Window\Windows\WindowsWindow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
